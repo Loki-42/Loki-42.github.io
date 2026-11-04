@@ -6,9 +6,9 @@ Ce dépôt héberge uniquement le **site d'information** du prototype et sa poli
 
 ## 🔗 Liens directs
 
-- 🏠 **[Accueil — Découvrir le projet](https://loki-42.github.io/)**
-- 🔒 **[Politique de confidentialité](https://loki-42.github.io/privacy.html)**
-- ✉️ **[Contact — Section dédiée](https://loki-42.github.io/privacy.html#contact)**
+- **[Accueil — Découvrir le projet](https://loki-42.github.io/)**
+- **[Politique de confidentialité](https://loki-42.github.io/privacy.html)**
+- **[Contact — Section dédiée](https://loki-42.github.io/privacy.html#contact)**
 
 ## À propos
 
