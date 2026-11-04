@@ -6,6 +6,7 @@
   <meta name="theme-color" content="#0b1019">
   <meta name="description" content="Hyakanime Tournament est un prototype personnel et non officiel de tournois et championnats d'anime. Informations sur l'usage privé de Google Drive et Rclone.">
   <title>Hyakanime Tournament — Prototype personnel</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23132030'/%3E%3Cpath d='M15 13v14h11M15 51V37h11M49 13v14H38M49 51V37H38' fill='none' stroke='%237bc9ff' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='32' cy='32' r='6' fill='%23d5edff'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,7 +17,13 @@
   <header class="site-header">
     <div class="container nav-content">
       <a href="index.html" class="brand" aria-label="Hyakanime Tournament — Accueil">
-        <span class="brand-mark" aria-hidden="true"><span>H</span></span>
+        <span class="brand-mark" aria-hidden="true">
+          <svg class="brand-symbol" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 13v14h11M15 51V37h11M49 13v14H38M49 51V37H38" stroke="currentColor" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M26 27h5M38 37h-5" stroke="#d5edff" stroke-width="3.2" stroke-linecap="round"/>
+            <circle cx="32" cy="32" r="5.2" fill="#d5edff"/>
+          </svg>
+        </span>
         <span class="brand-text"><strong>HYAKANIME</strong><small>TOURNAMENT</small></span>
       </a>
       <nav class="nav-links" aria-label="Navigation principale">
@@ -32,7 +39,7 @@
         <div class="eyebrow"><span class="status-dot" aria-hidden="true"></span> PROJET PERSONNEL · NON OFFICIEL</div>
         <h1 id="hero-title">Les anime entrent <span class="gradient-text">dans l'arène.</span></h1>
         <p class="hero-lead">Tournois à élimination, championnats à points et classements : <strong>Hyakanime Tournament</strong> est un prototype imaginé pour expérimenter, comparer et s'amuser entre amis.</p>
-        <p class="hero-note">Ce site présente le projet et sa configuration Google OAuth. Il ne donne pas accès à l'application, à son code ni aux données des participants.</p>
+        <p class="hero-note">Le projet est personnel, non officiel et actuellement réservé à des essais avec un petit cercle d'amis. Cette vitrine ne donne accès ni à l'application, ni au code, ni aux données des participants.</p>
         <div class="hero-actions">
           <a href="#projet" class="button button-primary">Découvrir le projet <span aria-hidden="true">↗</span></a>
           <a href="privacy.html" class="button button-outline">Confidentialité <span aria-hidden="true">→</span></a>
@@ -62,16 +69,32 @@
     <section class="container section" id="projet" aria-labelledby="project-title">
       <div class="section-heading"><div><p class="section-kicker">L'IDÉE DU PROJET</p><h2 id="project-title">Un terrain de jeu pour les passionnés d'anime.</h2></div><p>Une expérience personnelle, indépendante et développée pour le plaisir d'expérimenter.</p></div>
       <div class="feature-grid">
-        <article class="feature-card"><div class="feature-icon" aria-hidden="true">⌁</div><h3>Tournois</h3><p>Mettre des anime en duel, suivre les tours et découvrir un vainqueur.</p><span class="feature-index">01 / ÉLIMINATION</span></article>
-        <article class="feature-card"><div class="feature-icon" aria-hidden="true">▥</div><h3>Championnats</h3><p>Comparer des participants dans la durée, grâce aux votes et aux classements.</p><span class="feature-index">02 / CLASSEMENT</span></article>
-        <article class="feature-card"><div class="feature-icon" aria-hidden="true">◇</div><h3>Prototype privé</h3><p>Un projet non officiel, utilisé pour des tests personnels et avec quelques amis.</p><span class="feature-index">03 / EXPÉRIMENTATION</span></article>
+        <article class="feature-card"><div class="feature-icon" aria-hidden="true">⌁</div><h3>Tournois</h3><p>Créer un tableau à élimination directe, choisir le vainqueur de chaque duel et suivre la progression jusqu’à la finale.</p><span class="feature-index">01 / ÉLIMINATION</span></article>
+        <article class="feature-card"><div class="feature-icon" aria-hidden="true">▥</div><h3>Championnats</h3><p>Faire s’affronter les anime au fil d’un calendrier, enregistrer les votes et consulter un classement à points.</p><span class="feature-index">02 / CLASSEMENT</span></article>
+        <article class="feature-card"><div class="feature-icon" aria-hidden="true">◇</div><h3>Espaces privés</h3><p>Tester les compétitions dans des espaces visiteurs distincts, avec leurs propres tournois et historiques.</p><span class="feature-index">03 / ESPACES VISITEURS</span></article>
+      </div>
+    </section>
+
+    <section class="container section walkthrough" id="fonctionnement" aria-labelledby="walkthrough-title">
+      <div class="section-heading">
+        <div><p class="section-kicker">COMMENT ÇA MARCHE ?</p><h2 id="walkthrough-title">Une bibliothèque. Des duels. Un classement.</h2></div>
+        <p>Une idée née de l'envie de comparer les anime autrement qu'avec une liste de favoris.</p>
+      </div>
+      <div class="journey-grid">
+        <article class="journey-step"><span class="journey-number">01</span><h3>Choisir les anime</h3><p>Partir d'une bibliothèque importée depuis Hyakanime ou sélectionner les participants pour une compétition.</p></article>
+        <article class="journey-step"><span class="journey-number">02</span><h3>Définir le format</h3><p>Préparer un tournoi à élimination directe ou un championnat à points, avec ses rencontres et son calendrier.</p></article>
+        <article class="journey-step"><span class="journey-number">03</span><h3>Voter et suivre</h3><p>Enregistrer les choix, retrouver l'historique, suivre les résultats et voir évoluer le classement.</p></article>
+      </div>
+      <div class="project-disclaimer">
+        <span class="disclaimer-symbol" aria-hidden="true">i</span>
+        <p><strong>Un laboratoire personnel, pas un service officiel.</strong> Ce prototype est développé indépendamment, autour d'idées liées à Hyakanime. Il n'est ni affilié ni approuvé par l'équipe Hyakanime. Une éventuelle présentation future du projet ne constitue pas une collaboration actuelle.</p>
       </div>
     </section>
 
     <section class="container section" aria-labelledby="cloud-title">
       <div class="cloud-panel">
         <div class="cloud-symbol" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15.3" r="1"/><path d="M12 16.3v1.6"/></svg></div>
-        <div class="cloud-copy"><p class="section-kicker">STOCKAGE & CONFIDENTIALITÉ</p><h2 id="cloud-title">Pourquoi Google OAuth ?</h2><p>Google OAuth autorise <strong>Rclone</strong> à accéder aux fichiers de sauvegarde sur le Google Drive personnel du propriétaire du prototype. Les sauvegardes sont chiffrées avec <strong>Rclone Crypt avant leur transfert</strong>.</p><p>Cette page d'information ne demande aucune connexion Google et n'héberge aucune sauvegarde.</p><a class="inline-link" href="privacy.html">Lire la politique de confidentialité <span aria-hidden="true">↗</span></a></div>
+        <div class="cloud-copy"><p class="section-kicker">STOCKAGE & CONFIDENTIALITÉ</p><h2 id="cloud-title">Pourquoi Google OAuth ?</h2><p>Google OAuth sert uniquement à autoriser <strong>Rclone</strong> à gérer les sauvegardes du prototype dans le Google Drive personnel de son propriétaire. Ce n’est pas un système de connexion destiné aux visiteurs. Les sauvegardes sont chiffrées avec <strong>Rclone Crypt avant leur transfert</strong>.</p><p>Cette page d'information ne demande aucune connexion Google et n'héberge aucune sauvegarde.</p><a class="inline-link" href="privacy.html">Lire la politique de confidentialité <span aria-hidden="true">↗</span></a></div>
       </div>
     </section>
   </main>

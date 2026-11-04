@@ -6,12 +6,22 @@
   <meta name="theme-color" content="#0b1019">
   <meta name="description" content="Politique de confidentialité de Hyakanime Tournament : utilisation de Google OAuth, Google Drive et Rclone pour les sauvegardes chiffrées d'un prototype personnel.">
   <title>Confidentialité — Hyakanime Tournament</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23132030'/%3E%3Cpath d='M15 13v14h11M15 51V37h11M49 13v14H38M49 51V37H38' fill='none' stroke='%237bc9ff' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='32' cy='32' r='6' fill='%23d5edff'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <a class="skip-link" href="#contenu">Aller au contenu</a>
   <div class="ambient ambient-one" aria-hidden="true"></div>
-  <header class="site-header"><div class="container nav-content"><a href="index.html" class="brand" aria-label="Hyakanime Tournament — Accueil"><span class="brand-mark" aria-hidden="true"><span>H</span></span><span class="brand-text"><strong>HYAKANIME</strong><small>TOURNAMENT</small></span></a><nav class="nav-links" aria-label="Navigation principale"><a href="index.html" class="nav-link">Accueil</a><a href="privacy.html" class="nav-link is-active" aria-current="page">Confidentialité</a></nav></div></header>
+  <header class="site-header"><div class="container nav-content"><a href="index.html" class="brand" aria-label="Hyakanime Tournament — Accueil">
+        <span class="brand-mark" aria-hidden="true">
+          <svg class="brand-symbol" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 13v14h11M15 51V37h11M49 13v14H38M49 51V37H38" stroke="currentColor" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M26 27h5M38 37h-5" stroke="#d5edff" stroke-width="3.2" stroke-linecap="round"/>
+            <circle cx="32" cy="32" r="5.2" fill="#d5edff"/>
+          </svg>
+        </span>
+        <span class="brand-text"><strong>HYAKANIME</strong><small>TOURNAMENT</small></span>
+      </a><nav class="nav-links" aria-label="Navigation principale"><a href="index.html" class="nav-link">Accueil</a><a href="privacy.html" class="nav-link is-active" aria-current="page">Confidentialité</a></nav></div></header>
 
   <main class="container privacy-page" id="contenu">
     <div class="privacy-heading"><a class="back-link" href="index.html">← Retour à l'accueil</a><p class="section-kicker">TRANSPARENCE & DONNÉES</p><h1>Politique de <span class="gradient-text">confidentialité.</span></h1><p>Cette page explique comment l'autorisation Google OAuth est utilisée pour sauvegarder les données d'un prototype personnel avec Rclone.</p><div class="updated-line"><span class="status-dot" aria-hidden="true"></span> Dernière mise à jour : 4 novembre 2026</div></div>
@@ -20,7 +30,7 @@
       <aside class="privacy-toc" aria-label="Sommaire"><strong>SUR CETTE PAGE</strong><a href="#responsable">01. Présentation</a><a href="#donnees">02. Accès Google</a><a href="#utilisation">03. Utilisation</a><a href="#securite">04. Stockage et sécurité</a><a href="#partage">05. Partage</a><a href="#conservation">06. Conservation</a><a href="#retrait">07. Retirer l'accès</a><a href="#site">08. Ce site web</a><a href="#contact">09. Contact</a></aside>
       <div class="privacy-sections">
         <div class="notice"><span class="notice-icon" aria-hidden="true">i</span><p><strong>À retenir :</strong> cette page GitHub Pages est uniquement informative. Elle ne demande pas de connexion à Google et ne contient ni les données des tournois ni les fichiers de sauvegarde.</p></div>
-        <section class="policy-card" id="responsable"><span class="policy-number">01 / PRÉSENTATION</span><h2>Un prototype personnel et non officiel</h2><p>Hyakanime Tournament est un prototype indépendant consacré aux tournois et championnats d'anime. Il est utilisé pour des essais personnels et avec un cercle limité de personnes. Il n'est pas affilié à Hyakanime.</p><p>La connexion Google OAuth décrite ici est gérée par le propriétaire du prototype afin de sauvegarder ses données personnelles.</p></section>
+        <section class="policy-card" id="responsable"><span class="policy-number">01 / PRÉSENTATION</span><h2>Un prototype personnel et non officiel</h2><p>Hyakanime Tournament est un prototype personnel et indépendant consacré aux tournois à élimination directe et aux championnats d'anime. Il peut utiliser des bibliothèques importées depuis Hyakanime, suivre des votes et produire des classements. Il est utilisé pour des essais privés avec un cercle limité de personnes et n'est ni affilié ni approuvé par Hyakanime.</p><p>La connexion Google OAuth décrite ici est gérée uniquement par le propriétaire pour sauvegarder les données de son installation. Les visiteurs du prototype ne se connectent pas à leur compte Google par ce mécanisme.</p></section>
         <section class="policy-card" id="donnees"><span class="policy-number">02 / ACCÈS GOOGLE</span><h2>Quelles données Google sont accessibles ?</h2><p>L'autorisation OAuth permet à Rclone d'accéder aux fichiers de Google Drive couverts par les autorisations accordées. La configuration utilise la portée <code>drive.file</code>, destinée aux fichiers créés ou ouverts par cette application.</p><p>Le site d'information que vous consultez n'accède lui-même à aucun compte Google.</p></section>
         <section class="policy-card" id="utilisation"><span class="policy-number">03 / FINALITÉ</span><h2>À quoi sert cet accès ?</h2><p>Rclone sert exclusivement au fonctionnement de la synchronisation des sauvegardes du prototype : déposer, retrouver, vérifier et, lorsque cela est nécessaire, retirer d'anciennes sauvegardes.</p><p>L'autorisation n'est pas utilisée pour afficher des publicités, analyser des comportements ou alimenter un service commercial.</p></section>
         <section class="policy-card" id="securite"><span class="policy-number">04 / SÉCURITÉ</span><h2>Comment sont protégées les sauvegardes ?</h2><p>Les bases de données sont utilisées localement par le prototype. Avant leur envoi vers Google Drive, les sauvegardes sont chiffrées au moyen de <strong>Rclone Crypt</strong>.</p><p>Les clés de déchiffrement ne sont pas publiées sur cette page ni dans le dépôt GitHub Pages. Google Drive héberge les fichiers chiffrés ; certaines métadonnées techniques du stockage peuvent rester visibles par le fournisseur.</p></section>
