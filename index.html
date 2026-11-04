@@ -1,25 +1,81 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HyakAnimeTournament - OAuth</title>
+  <meta name="theme-color" content="#0b1019">
+  <meta name="description" content="HYAK Anime Tournament est un prototype personnel et non officiel de tournois et championnats d'anime. Informations sur l'usage privé de Google Drive et Rclone.">
+  <title>HYAK Anime Tournament — Prototype personnel</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>HyakAnimeTournament</h1>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
 
-  <p>HyakAnimeTournament est un prototype personnel
-  et non officiel de tournois et championnats d'anime.</p>
+  <header class="site-header">
+    <div class="container nav-content">
+      <a href="index.html" class="brand" aria-label="HYAK Anime Tournament — Accueil">
+        <span class="brand-mark" aria-hidden="true"><span>H</span></span>
+        <span class="brand-text"><strong>HYAK</strong><small>ANIME TOURNAMENT</small></span>
+      </a>
+      <nav class="nav-links" aria-label="Navigation principale">
+        <a href="index.html" class="nav-link is-active" aria-current="page">Accueil</a>
+        <a href="privacy.html" class="nav-link">Confidentialité</a>
+      </nav>
+    </div>
+  </header>
 
-  <p>Cette page présente uniquement la configuration
-  Google OAuth utilisée par Rclone pour sauvegarder
-  les données chiffrées du prototype sur le Google Drive
-  personnel de son propriétaire.</p>
+  <main id="contenu">
+    <section class="container hero hero-home" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <div class="eyebrow"><span class="status-dot" aria-hidden="true"></span> PROJET PERSONNEL · NON OFFICIEL</div>
+        <h1 id="hero-title">Les anime entrent <span class="gradient-text">dans l'arène.</span></h1>
+        <p class="hero-lead">Tournois à élimination, championnats à points et classements : <strong>HYAK Anime Tournament</strong> est un prototype imaginé pour expérimenter, comparer et s'amuser entre amis.</p>
+        <p class="hero-note">Ce site présente le projet et sa configuration Google OAuth. Il ne donne pas accès à l'application, à son code ni aux données des participants.</p>
+        <div class="hero-actions">
+          <a href="#projet" class="button button-primary">Découvrir le projet <span aria-hidden="true">↗</span></a>
+          <a href="privacy.html" class="button button-outline">Confidentialité <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <div class="demo-frame" aria-label="Illustration fictive d'un duel de tournoi">
+        <div class="demo-topline"><div class="mini-dots" aria-hidden="true"><i></i><i></i><i></i></div><span>APERÇU DU CONCEPT</span><span class="demo-live">TOURNOI</span></div>
+        <div class="demo-inner">
+          <div class="demo-caption"><span>DUEL 01 / 08</span><span>ÉLIMINATION DIRECTE</span></div>
+          <h2>Qui passe au tour suivant ?</h2>
+          <div class="duel-layout">
+            <div class="duel-card">
+              <div class="poster-abstract poster-a" aria-hidden="true"><span class="poster-ring"></span><span class="poster-glyph">A</span></div>
+              <div class="duel-name">ANIME A</div>
+            </div>
+            <div class="versus">VS</div>
+            <div class="duel-card">
+              <div class="poster-abstract poster-b" aria-hidden="true"><span class="poster-ring"></span><span class="poster-glyph">B</span></div>
+              <div class="duel-name">ANIME B</div>
+            </div>
+          </div>
+          <div class="demo-footer"><span class="tiny-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span> Expérience illustrative — aucune donnée réelle</div>
+        </div>
+      </div>
+    </section>
 
-  <p>Le prototype et son code source ne sont pas
-  distribués sur ce site.</p>
+    <section class="container section" id="projet" aria-labelledby="project-title">
+      <div class="section-heading"><div><p class="section-kicker">L'IDÉE DU PROJET</p><h2 id="project-title">Un terrain de jeu pour les passionnés d'anime.</h2></div><p>Une expérience personnelle, indépendante et développée pour le plaisir d'expérimenter.</p></div>
+      <div class="feature-grid">
+        <article class="feature-card"><div class="feature-icon" aria-hidden="true">⌁</div><h3>Tournois</h3><p>Mettre des anime en duel, suivre les tours et découvrir un vainqueur.</p><span class="feature-index">01 / ÉLIMINATION</span></article>
+        <article class="feature-card"><div class="feature-icon" aria-hidden="true">▥</div><h3>Championnats</h3><p>Comparer des participants dans la durée, grâce aux votes et aux classements.</p><span class="feature-index">02 / CLASSEMENT</span></article>
+        <article class="feature-card"><div class="feature-icon" aria-hidden="true">◇</div><h3>Prototype privé</h3><p>Un projet non officiel, utilisé pour des tests personnels et avec quelques amis.</p><span class="feature-index">03 / EXPÉRIMENTATION</span></article>
+      </div>
+    </section>
 
-  <p><a href="privacy.html">Politique de confidentialité</a></p>
+    <section class="container section" aria-labelledby="cloud-title">
+      <div class="cloud-panel">
+        <div class="cloud-symbol" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15.3" r="1"/><path d="M12 16.3v1.6"/></svg></div>
+        <div class="cloud-copy"><p class="section-kicker">STOCKAGE & CONFIDENTIALITÉ</p><h2 id="cloud-title">Pourquoi Google OAuth ?</h2><p>Google OAuth autorise <strong>Rclone</strong> à accéder aux fichiers de sauvegarde sur le Google Drive personnel du propriétaire du prototype. Les sauvegardes sont chiffrées avec <strong>Rclone Crypt avant leur transfert</strong>.</p><p>Cette page d'information ne demande aucune connexion Google et n'héberge aucune sauvegarde.</p><a class="inline-link" href="privacy.html">Lire la politique de confidentialité <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><div><strong>HYAK Anime Tournament</strong><p>Prototype personnel, indépendant et non officiel. Aucune affiliation avec Hyakanime.</p></div><div class="footer-links"><a href="index.html">Accueil</a><a href="privacy.html">Confidentialité</a><a href="https://github.com/Loki-42" target="_blank" rel="noopener noreferrer">Contact GitHub ↗</a></div></div></footer>
 </body>
 </html>

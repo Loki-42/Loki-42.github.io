@@ -1,43 +1,38 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HyakAnimeTournament - Politique de confidentialité</title>
+  <meta name="theme-color" content="#0b1019">
+  <meta name="description" content="Politique de confidentialité de HYAK Anime Tournament : utilisation de Google OAuth, Google Drive et Rclone pour les sauvegardes chiffrées d'un prototype personnel.">
+  <title>Confidentialité — HYAK Anime Tournament</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Politique de confidentialité</h1>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <header class="site-header"><div class="container nav-content"><a href="index.html" class="brand" aria-label="HYAK Anime Tournament — Accueil"><span class="brand-mark" aria-hidden="true"><span>H</span></span><span class="brand-text"><strong>HYAK</strong><small>ANIME TOURNAMENT</small></span></a><nav class="nav-links" aria-label="Navigation principale"><a href="index.html" class="nav-link">Accueil</a><a href="privacy.html" class="nav-link is-active" aria-current="page">Confidentialité</a></nav></div></header>
 
-  <p>HyakAnimeTournament est un prototype personnel
-  et non officiel.</p>
+  <main class="container privacy-page" id="contenu">
+    <div class="privacy-heading"><a class="back-link" href="index.html">← Retour à l'accueil</a><p class="section-kicker">TRANSPARENCE & DONNÉES</p><h1>Politique de <span class="gradient-text">confidentialité.</span></h1><p>Cette page explique comment l'autorisation Google OAuth est utilisée pour sauvegarder les données d'un prototype personnel avec Rclone.</p><div class="updated-line"><span class="status-dot" aria-hidden="true"></span> Dernière mise à jour : 4 novembre 2026</div></div>
 
-  <h2>Utilisation de Google Drive</h2>
-  <p>L'autorisation Google OAuth est utilisée
-  exclusivement par le propriétaire du prototype
-  pour permettre à Rclone d'accéder aux fichiers
-  créés pour ses sauvegardes sur Google Drive.</p>
+    <div class="privacy-layout">
+      <aside class="privacy-toc" aria-label="Sommaire"><strong>SUR CETTE PAGE</strong><a href="#responsable">01. Présentation</a><a href="#donnees">02. Accès Google</a><a href="#utilisation">03. Utilisation</a><a href="#securite">04. Stockage et sécurité</a><a href="#partage">05. Partage</a><a href="#conservation">06. Conservation</a><a href="#retrait">07. Retirer l'accès</a><a href="#site">08. Ce site web</a><a href="#contact">09. Contact</a></aside>
+      <div class="privacy-sections">
+        <div class="notice"><span class="notice-icon" aria-hidden="true">i</span><p><strong>À retenir :</strong> cette page GitHub Pages est uniquement informative. Elle ne demande pas de connexion à Google et ne contient ni les données des tournois ni les fichiers de sauvegarde.</p></div>
+        <section class="policy-card" id="responsable"><span class="policy-number">01 / PRÉSENTATION</span><h2>Un prototype personnel et non officiel</h2><p>HYAK Anime Tournament est un prototype indépendant consacré aux tournois et championnats d'anime. Il est utilisé pour des essais personnels et avec un cercle limité de personnes. Il n'est pas affilié à Hyakanime.</p><p>La connexion Google OAuth décrite ici est gérée par le propriétaire du prototype afin de sauvegarder ses données personnelles.</p></section>
+        <section class="policy-card" id="donnees"><span class="policy-number">02 / ACCÈS GOOGLE</span><h2>Quelles données Google sont accessibles ?</h2><p>L'autorisation OAuth permet à Rclone d'accéder aux fichiers de Google Drive couverts par les autorisations accordées. La configuration utilise la portée <code>drive.file</code>, destinée aux fichiers créés ou ouverts par cette application.</p><p>Le site d'information que vous consultez n'accède lui-même à aucun compte Google.</p></section>
+        <section class="policy-card" id="utilisation"><span class="policy-number">03 / FINALITÉ</span><h2>À quoi sert cet accès ?</h2><p>Rclone sert exclusivement au fonctionnement de la synchronisation des sauvegardes du prototype : déposer, retrouver, vérifier et, lorsque cela est nécessaire, retirer d'anciennes sauvegardes.</p><p>L'autorisation n'est pas utilisée pour afficher des publicités, analyser des comportements ou alimenter un service commercial.</p></section>
+        <section class="policy-card" id="securite"><span class="policy-number">04 / SÉCURITÉ</span><h2>Comment sont protégées les sauvegardes ?</h2><p>Les bases de données sont utilisées localement par le prototype. Avant leur envoi vers Google Drive, les sauvegardes sont chiffrées au moyen de <strong>Rclone Crypt</strong>.</p><p>Les clés de déchiffrement ne sont pas publiées sur cette page ni dans le dépôt GitHub Pages. Google Drive héberge les fichiers chiffrés ; certaines métadonnées techniques du stockage peuvent rester visibles par le fournisseur.</p></section>
+        <section class="policy-card" id="partage"><span class="policy-number">05 / PARTAGE</span><h2>Les données sont-elles partagées ?</h2><p>Les données accessibles via Google OAuth ne sont ni vendues ni utilisées à des fins publicitaires par le propriétaire du prototype. Les sauvegardes restent dans son espace Google Drive personnel, avec les traitements nécessaires assurés par Google en tant que fournisseur de stockage.</p><p>Ni les données des participants ni les archives ne sont diffusées sur ce site public.</p></section>
+        <section class="policy-card" id="conservation"><span class="policy-number">06 / CONSERVATION</span><h2>Combien de temps sont-elles conservées ?</h2><p>Les sauvegardes sont conservées aussi longtemps que nécessaire à la continuité et à la restauration du prototype. Un mécanisme de rotation peut supprimer automatiquement d'anciennes archives ; de petites traces techniques de synchronisation peuvent être gardées pour détecter les conflits entre installations.</p><p>Le propriétaire peut retirer ses archives de Google Drive lorsqu'il n'en a plus besoin.</p></section>
+        <section class="policy-card" id="retrait"><span class="policy-number">07 / CONTRÔLE</span><h2>Comment retirer l'autorisation ?</h2><p>Le propriétaire peut retirer l'accès OAuth depuis les <a href="https://myaccount.google.com/connections" target="_blank" rel="noopener noreferrer">connexions de son compte Google ↗</a>.</p><p>La révocation bloque les futurs accès, mais ne supprime pas automatiquement les fichiers de sauvegarde déjà stockés. Leur suppression doit être réalisée séparément dans Google Drive ou via Rclone.</p></section>
+        <section class="policy-card" id="site"><span class="policy-number">08 / SITE PUBLIC</span><h2>Et cette page GitHub Pages ?</h2><p>Ce site est statique, n'ajoute aucun cookie de suivi et ne contient aucun script d'analyse d'audience. Son hébergement est assuré par GitHub Pages, qui peut traiter des informations techniques de consultation conformément à ses propres règles.</p></section>
+        <section class="policy-card" id="contact"><span class="policy-number">09 / CONTACT</span><h2>Une question ?</h2><p>Pour contacter le propriétaire du prototype au sujet de cette politique de confidentialité, vous pouvez passer par son <a href="https://github.com/Loki-42" target="_blank" rel="noopener noreferrer">profil GitHub ↗</a>.</p></section>
+      </div>
+    </div>
+  </main>
 
-  <h2>Stockage et sécurité</h2>
-  <p>Les sauvegardes du prototype sont chiffrées
-  avant leur transfert sur Google Drive à l'aide
-  de Rclone Crypt. Elles ne sont pas publiées
-  sur ce site.</p>
-
-  <h2>Partage des données</h2>
-  <p>Les données Google accessibles à cette connexion
-  ne sont ni vendues ni partagées avec des annonceurs.
-  Elles sont utilisées pour les sauvegardes personnelles.</p>
-
-  <h2>Révocation de l'accès</h2>
-  <p>Le propriétaire peut retirer l'autorisation
-  Google depuis les paramètres de sécurité
-  de son compte Google.</p>
-
-  <h2>Contact</h2>
-  <p>Pour toute question :
-  <a href="https://github.com/Loki-42">profil GitHub</a>.</p>
-
-  <p><a href="index.html">Retour à l'accueil</a></p>
+  <footer class="site-footer"><div class="container footer-inner"><div><strong>HYAK Anime Tournament</strong><p>Prototype personnel, indépendant et non officiel. Aucune affiliation avec Hyakanime.</p></div><div class="footer-links"><a href="index.html">Accueil</a><a href="privacy.html">Confidentialité</a><a href="https://github.com/Loki-42" target="_blank" rel="noopener noreferrer">Contact GitHub ↗</a></div></div></footer>
 </body>
 </html>
